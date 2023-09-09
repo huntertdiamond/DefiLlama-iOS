@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State var presentDefaultSheet: Bool = true
-    @State var selectedDetent: PresentationDetent = .medium
-    private let availableDetents: Set<PresentationDetent> = [.fraction(0.15), .fraction(0.6), .fraction(1)]
+    @State var selectedDetent: PresentationDetent = .fraction(0.25)
+    private let availableDetents: Set<PresentationDetent> = [.fraction(0.25), .fraction(0.6), .fraction(1)]
 
     var body: some View {
         VStack {
@@ -20,13 +20,14 @@ struct ContentView: View {
         .sheet(isPresented: $presentDefaultSheet) {
             DefaultSheetIndex(selectedDetent: $selectedDetent)
                 .presentationDetents(availableDetents, selection: $selectedDetent)
-           // allows the background content to be interacted with until the sheet is full size
                 .presentationBackgroundInteraction(
                     .enabled(upThrough: .fraction(1))
                 )
-            // sheet cannot be dismissed
                 .interactiveDismissDisabled(true)
-
+                .onChange(of: selectedDetent) { newValue in
+                    let generator = UIImpactFeedbackGenerator(style: .medium)
+                    generator.impactOccurred()
+                }
         }
     }
 }

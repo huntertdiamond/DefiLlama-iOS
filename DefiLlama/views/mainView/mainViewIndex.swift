@@ -13,11 +13,10 @@ struct MainViewIndex: View {
             VStack(alignment: .leading, spacing: 8){
                 MainViewHeader()
                 VStack{
-                    Rectangle()
-                        .fill(.ultraThinMaterial)
-                        .cornerRadius(8)
-                        .frame(height: 300)
+
+                    TVLChart()
                 }
+                
                 Spacer()
             }
         }

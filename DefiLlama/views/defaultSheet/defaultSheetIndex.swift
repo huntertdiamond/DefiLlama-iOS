@@ -15,36 +15,18 @@ struct DefaultSheetIndex: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8){
-            HStack{
-                HStack{
-                    Text("Protocol Rankings")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                    Image(systemName: "chevron.down")
-                        .font(.subheadline)
-                        .fontWeight(.bold)
-                }
-                Spacer()
-                Image(systemName: "gearshape")
-                    .frame(width: 40, height: 40)
+            if selectedDetent == .fraction(0.25) {
                 
-                    .fontWeight(.bold)
+                SmallSheetDisplay()
             }
-            VStack{
-                TextField(placeholder, text: $text)
-                    .frame(height: 50)
+            if selectedDetent == .fraction(0.6) {
+                MediumSheetDisplay()            }
+            if selectedDetent == .fraction(1) {
+                LargeSheetDisplay()
             }
-            .background(Color.l1)
-            .cornerRadius(8)
-            .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.borderLight, lineWidth: 2))
-            VStack{
-                Spacer()
-                SpacerStack()
-                
-            }
-            .background(Color.l1)
-            .cornerRadius(8)
-            .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.borderLight, lineWidth: 2))
+            Spacer()
+            SpacerStack()
+
         }
         .padding()
     }
@@ -54,6 +36,9 @@ struct DefaultSheetIndex_Previews: PreviewProvider {
     static var searchText: String = ""
     
     static var previews: some View {
-        DefaultSheetIndex(selectedDetent: .constant(.medium))
+        DefaultSheetIndex(selectedDetent: .constant(.fraction(0.25)))
     }
 }
+
+
+

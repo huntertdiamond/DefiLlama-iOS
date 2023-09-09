@@ -13,9 +13,9 @@ struct MainViewHeader: View {
     var body: some View{
         VStack(alignment:.leading, spacing: 8){
             VStack(alignment:.leading, spacing: 2){
-                Text("$37.856b")
+                Text("$37.856B")
                     .font(.title)
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
                 Text("Total Value Locked")
                     .font(.title3)
                     .fontWeight(.medium)
@@ -91,6 +91,7 @@ struct ChainTab: View{
             .background(Color.l1)
             .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.borderLight, lineWidth: 1))
             .cornerRadius(8)
+
         }
     }
 }
