@@ -12,10 +12,7 @@ struct MainViewIndex: View {
         ScrollView(showsIndicators: false){
             VStack(alignment: .leading, spacing: 8){
                 MainViewHeader()
-                VStack{
-
-                    TVLChart()
-                }
+                TVLChart()
                 
                 Spacer()
             }

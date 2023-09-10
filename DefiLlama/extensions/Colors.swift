@@ -21,6 +21,7 @@ extension Color {
     
     // text colors
     
+    static let textPrimary = Color("textPrimary")
     static let textSecondary = Color("textSecondary")
     static let textTertiary = Color("textTertiary")
     

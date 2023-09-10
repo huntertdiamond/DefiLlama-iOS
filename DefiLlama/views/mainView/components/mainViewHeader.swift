@@ -21,7 +21,7 @@ struct MainViewHeader: View {
                     .fontWeight(.medium)
                     .foregroundColor(Color.textSecondary)
             }
-            ChainTab()
+            ChainTabSelector()
             VStack(alignment: .leading, spacing: 4){
                 HStack{
                     Text("Stablecoins Market Cap:")
@@ -29,27 +29,27 @@ struct MainViewHeader: View {
                         .foregroundColor(Color.textSecondary)
                     Spacer()
                     Text("$124.287 B")
-                        .font(.callout)
                         .fontWeight(.bold)
                 }
                 HStack{
                     Text("Volume (24h):")
+                        .font(.callout)
+
                         .foregroundColor(Color.textSecondary)
                     
                     Spacer()
                     
                     Text("$1.394B")
-                        .font(.callout)
                         .fontWeight(.bold)
                 }
                 HStack{
                     Text("Total Funding:")
                         .foregroundColor(Color.textSecondary)
-                    
+                        .font(.callout)
+
                     Spacer()
                     
                     Text("$96.347B")
-                        .font(.callout)
                         .fontWeight(.bold)
                 }
                 
@@ -69,29 +69,38 @@ struct VIEWPreview: PreviewProvider {
     }
 }
 
-struct ChainTab: View{
-    var body: some View{
-        HStack(spacing: 4){
-            HStack{
-                Text("All")
-                    .font(.subheadline)
-                    .foregroundColor(Color.ourBlue)
-            }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 6)
-            .background(Color.ourBlueLight)
-            .cornerRadius(8)
-            .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.borderLight, lineWidth: 1))
-            HStack{
-                Text("Ethereum")
-                    .font(.subheadline)
-            }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 6)
-            .background(Color.l1)
-            .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.borderLight, lineWidth: 1))
-            .cornerRadius(8)
+struct ChainTab: View {
+    let title: String
+    var isSelected: Bool
+    
+    var body: some View {
+        HStack {
+            Text(title)
+                .font(.subheadline)
+                .fontWeight(.medium)
+                .foregroundColor(isSelected ? Color.ourBlue : Color.textPrimary)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 6)
+        .background(isSelected ? Color.ourBlueLight : Color.l1)
+        .cornerRadius(8)
+        .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.borderLight, lineWidth: 1))
+    }
+}
 
+struct ChainTabSelector: View {
+    @State private var selectedTab: BigTenChains = .all // Assume you have 'all' enum case in your BigTenChains enum
+    
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(BigTenChains.allCases, id: \.self) { chain in
+                    ChainTab(title: chain.rawValue, isSelected: chain == selectedTab)
+                        .onTapGesture {
+                            selectedTab = chain
+                        }
+                }
+            }
         }
     }
 }

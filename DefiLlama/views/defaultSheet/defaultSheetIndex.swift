@@ -15,19 +15,10 @@ struct DefaultSheetIndex: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8){
-            if selectedDetent == .fraction(0.25) {
-                
-                SmallSheetDisplay()
-            }
-            if selectedDetent == .fraction(0.6) {
-                MediumSheetDisplay()            }
-            if selectedDetent == .fraction(1) {
-                LargeSheetDisplay()
-            }
-            Spacer()
-            SpacerStack()
-
+            SmallSheetDisplay()
+            
         }
+        .preferredColorScheme(.light)
         .padding()
     }
 }

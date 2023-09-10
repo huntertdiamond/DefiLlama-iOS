@@ -50,9 +50,9 @@ struct ProtocolElement: Codable {
         case geckoID
         case cmcID
         case category, chains, module, twitter, forkedFrom, oracles, listedAt, slug, tvl, chainTvls
-        case change1H
-        case change1D
-        case change7D
+        case change1H = "change_1h"
+        case change1D = "change_1d"
+        case change7D = "change_7d"
         case tokenBreakdowns, mcap
         case referralURL
         case treasury

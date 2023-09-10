@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D56AF3FC2AAD38110087EE26 /* searchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56AF3FB2AAD38110087EE26 /* searchBar.swift */; };
+		D56AF3FE2AAD38380087EE26 /* protocolPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56AF3FD2AAD38380087EE26 /* protocolPreviewContainer.swift */; };
+		D56AF4012AAD413D0087EE26 /* protocolDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56AF4002AAD413D0087EE26 /* protocolDataManager.swift */; };
+		D56AF4032AAD42460087EE26 /* mainProtocolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56AF4022AAD42460087EE26 /* mainProtocolList.swift */; };
+		D56AF4052AAD49A70087EE26 /* imageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56AF4042AAD49A70087EE26 /* imageView.swift */; };
+		D56AF4072AAD4ABF0087EE26 /* formatNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56AF4062AAD4ABF0087EE26 /* formatNumbers.swift */; };
 		D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */; };
 		D5C487402AACCD6A0089DE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873F2AACCD6A0089DE07 /* ContentView.swift */; };
 		D5C487422AACCD6B0089DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C487412AACCD6B0089DE07 /* Assets.xcassets */; };
@@ -18,7 +24,7 @@
 		D5C4875D2AACD9300089DE07 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4875C2AACD9300089DE07 /* Colors.swift */; };
 		D5C4875F2AACDEBF0089DE07 /* mainViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4875E2AACDEBF0089DE07 /* mainViewHeader.swift */; };
 		D5C487642AACE0780089DE07 /* defaultSheetIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C487632AACE0780089DE07 /* defaultSheetIndex.swift */; };
-		D5C487672AACE12E0089DE07 /* SpacerStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C487662AACE12E0089DE07 /* SpacerStack.swift */; };
+		D5C487672AACE12E0089DE07 /* spacerStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C487662AACE12E0089DE07 /* spacerStack.swift */; };
 		D5ECC39F2AAD032E00D4216B /* placeholderTVL.json in Resources */ = {isa = PBXBuildFile; fileRef = D5ECC39E2AAD032E00D4216B /* placeholderTVL.json */; };
 		D5ECC3A12AAD035500D4216B /* tvlChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ECC3A02AAD035500D4216B /* tvlChart.swift */; };
 		D5ECC3A32AAD042100D4216B /* tvlChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ECC3A22AAD042100D4216B /* tvlChartViewModel.swift */; };
@@ -28,6 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D56AF3FB2AAD38110087EE26 /* searchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBar.swift; sourceTree = "<group>"; };
+		D56AF3FD2AAD38380087EE26 /* protocolPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolPreviewContainer.swift; sourceTree = "<group>"; };
+		D56AF4002AAD413D0087EE26 /* protocolDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolDataManager.swift; sourceTree = "<group>"; };
+		D56AF4022AAD42460087EE26 /* mainProtocolList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainProtocolList.swift; sourceTree = "<group>"; };
+		D56AF4042AAD49A70087EE26 /* imageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageView.swift; sourceTree = "<group>"; };
+		D56AF4062AAD4ABF0087EE26 /* formatNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formatNumbers.swift; sourceTree = "<group>"; };
 		D5C4873A2AACCD6A0089DE07 /* DefiLlama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiLlama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiLlamaApp.swift; sourceTree = "<group>"; };
 		D5C4873F2AACCD6A0089DE07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,7 +52,7 @@
 		D5C4875C2AACD9300089DE07 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D5C4875E2AACDEBF0089DE07 /* mainViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewHeader.swift; sourceTree = "<group>"; };
 		D5C487632AACE0780089DE07 /* defaultSheetIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = defaultSheetIndex.swift; sourceTree = "<group>"; };
-		D5C487662AACE12E0089DE07 /* SpacerStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerStack.swift; sourceTree = "<group>"; };
+		D5C487662AACE12E0089DE07 /* spacerStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacerStack.swift; sourceTree = "<group>"; };
 		D5ECC39E2AAD032E00D4216B /* placeholderTVL.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = placeholderTVL.json; sourceTree = "<group>"; };
 		D5ECC3A02AAD035500D4216B /* tvlChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvlChart.swift; sourceTree = "<group>"; };
 		D5ECC3A22AAD042100D4216B /* tvlChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvlChartViewModel.swift; sourceTree = "<group>"; };
@@ -60,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D56AF3FF2AAD410E0087EE26 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D56AF4002AAD413D0087EE26 /* protocolDataManager.swift */,
+				D56AF4062AAD4ABF0087EE26 /* formatNumbers.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
 		D5C487312AACCD6A0089DE07 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +100,7 @@
 		D5C4873C2AACCD6A0089DE07 /* DefiLlama */ = {
 			isa = PBXGroup;
 			children = (
+				D56AF3FF2AAD410E0087EE26 /* viewModels */,
 				D5C487652AACE1100089DE07 /* components */,
 				D5C4874E2AACD0790089DE07 /* assets */,
 				D5C4874D2AACD0690089DE07 /* extensions */,
@@ -166,9 +188,8 @@
 		D5C487612AACE0400089DE07 /* components */ = {
 			isa = PBXGroup;
 			children = (
-				D5ECC3A42AAD107B00D4216B /* mediumSheetDisplay.swift */,
-				D5ECC3A62AAD109B00D4216B /* largeSheetDisplay.swift */,
-				D5ECC3A82AAD10AF00D4216B /* smallSheetDisplay.swift */,
+				D56AF3FD2AAD38380087EE26 /* protocolPreviewContainer.swift */,
+				D56AF4022AAD42460087EE26 /* mainProtocolList.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -183,7 +204,9 @@
 		D5C487652AACE1100089DE07 /* components */ = {
 			isa = PBXGroup;
 			children = (
-				D5C487662AACE12E0089DE07 /* SpacerStack.swift */,
+				D5C487662AACE12E0089DE07 /* spacerStack.swift */,
+				D56AF3FB2AAD38110087EE26 /* searchBar.swift */,
+				D56AF4042AAD49A70087EE26 /* imageView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -191,6 +214,9 @@
 		D5ECC39C2AAD022800D4216B /* displays */ = {
 			isa = PBXGroup;
 			children = (
+				D5ECC3A42AAD107B00D4216B /* mediumSheetDisplay.swift */,
+				D5ECC3A62AAD109B00D4216B /* largeSheetDisplay.swift */,
+				D5ECC3A82AAD10AF00D4216B /* smallSheetDisplay.swift */,
 			);
 			path = displays;
 			sourceTree = "<group>";
@@ -277,11 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C487672AACE12E0089DE07 /* SpacerStack.swift in Sources */,
+				D56AF3FE2AAD38380087EE26 /* protocolPreviewContainer.swift in Sources */,
+				D5C487672AACE12E0089DE07 /* spacerStack.swift in Sources */,
 				D5C487642AACE0780089DE07 /* defaultSheetIndex.swift in Sources */,
+				D56AF4072AAD4ABF0087EE26 /* formatNumbers.swift in Sources */,
 				D5C4875F2AACDEBF0089DE07 /* mainViewHeader.swift in Sources */,
 				D5C487402AACCD6A0089DE07 /* ContentView.swift in Sources */,
 				D5C4875D2AACD9300089DE07 /* Colors.swift in Sources */,
+				D56AF3FC2AAD38110087EE26 /* searchBar.swift in Sources */,
 				D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */,
 				D5ECC3A32AAD042100D4216B /* tvlChartViewModel.swift in Sources */,
 				D5ECC3A52AAD107B00D4216B /* mediumSheetDisplay.swift in Sources */,
@@ -289,7 +318,10 @@
 				D5C487592AACD5610089DE07 /* allChains.swift in Sources */,
 				D5ECC3A72AAD109B00D4216B /* largeSheetDisplay.swift in Sources */,
 				D5ECC3A12AAD035500D4216B /* tvlChart.swift in Sources */,
+				D56AF4032AAD42460087EE26 /* mainProtocolList.swift in Sources */,
 				D5C487552AACD1660089DE07 /* mainViewIndex.swift in Sources */,
+				D56AF4052AAD49A70087EE26 /* imageView.swift in Sources */,
+				D56AF4012AAD413D0087EE26 /* protocolDataManager.swift in Sources */,
 				D5C487572AACD3F10089DE07 /* protocolDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -71,3 +71,18 @@ enum AllChains: String, CaseIterable {
     case onus = "Onus"
     case waves = "Waves"
 }
+
+enum BigTenChains: String, CaseIterable {
+    case all = "All"
+    case ethereum = "Ethereum"
+    case tron = "Tron"
+    case bsc = "BSC"
+    case arbitrum = "Arbitrum"
+    case polygon = "Polygon"
+    case optimism = "Optimism"
+    case avalanche = "Avalanche"
+    case base = "Base"
+    case mixin = "Mixin"
+    case solana = "Solana"
+    case bitcoin = "Bitcoin"
+}
