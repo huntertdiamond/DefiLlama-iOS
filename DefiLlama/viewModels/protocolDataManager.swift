@@ -12,7 +12,7 @@ final class ProtocolDataManager {
     
     private init() {}
     
-    func fetchMainProtocolEndpoint() async throws -> [ProtocolElement] {
+    func fetchMainProtocolEndpoint() async throws -> [MainProtocolElement] {
         print("fetchMainProtocolEndpoint function called")
 
         let urlString = "https://api.llama.fi/protocols"
@@ -38,7 +38,7 @@ final class ProtocolDataManager {
             print("HTTP response received, status code: \(httpResponse.statusCode), attempting to decode data...")
             
             do {
-                let protocolElements = try JSONDecoder().decode([ProtocolElement].self, from: data)
+                let protocolElements = try JSONDecoder().decode([MainProtocolElement].self, from: data)
                 print("Successfully decoded protocol elements: \(protocolElements.count) items received")
                 
                 if let firstElement = protocolElements.first {

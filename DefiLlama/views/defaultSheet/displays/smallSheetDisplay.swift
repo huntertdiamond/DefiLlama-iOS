@@ -4,19 +4,19 @@ import SwiftUI
 struct SmallSheetDisplay: View {
     @State var searchText: String = ""
     @State var selectedCategory: Categories = .protocolRankings
-    
     var body: some View {
-        VStack(spacing: 2) {
+        VStack(spacing: 4) {
             HStack {
                 MainSheetDisplaySelector(selectedCategory: $selectedCategory)
                 Spacer()
-                Image(systemName: "gearshape")
-                    .frame(width: 40, height: 40)
-                    .fontWeight(.bold)
+   
+                    Image(systemName: "gearshape")
+                        .frame(width: 40, height: 40)
+                        .fontWeight(.bold)
+                
             }
             SearchBar(text: $searchText)
             MainProtocolList()
-            
         }
     }
 }

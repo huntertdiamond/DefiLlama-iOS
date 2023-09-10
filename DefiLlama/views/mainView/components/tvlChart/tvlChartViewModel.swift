@@ -33,8 +33,4 @@ class TVLChartViewModel {
     }
 }
 
-struct TVLData: Codable, Identifiable {
-    let date: Double
-    let tvl: Double
-    var id: Double { date } // Use date as unique id
-}
+

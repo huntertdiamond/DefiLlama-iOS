@@ -9,7 +9,7 @@ import Foundation
 
 
 // MARK: - ProtocolElement
-struct ProtocolElement: Codable {
+struct MainProtocolElement: Codable {
     let id, name: String
     let address: String?
     let symbol: String
@@ -20,7 +20,7 @@ struct ProtocolElement: Codable {
     let audits: String?
     let auditNote: String?
     let geckoID, cmcID: String?
-    let category: Category
+    let category: ProtocolCategory
     let chains: [String]
     let module: String
     let twitter: String?
@@ -63,7 +63,7 @@ struct ProtocolElement: Codable {
     }
 }
 
-enum Category: String, Codable {
+enum ProtocolCategory: String, Codable {
     case algoStables = "Algo-Stables"
     case bridge = "Bridge"
     case cdp = "CDP"

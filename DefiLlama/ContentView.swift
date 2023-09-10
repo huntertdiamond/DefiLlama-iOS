@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State var presentDefaultSheet: Bool = true
     @State var selectedDetent: PresentationDetent = .fraction(0.25)
     private let availableDetents: Set<PresentationDetent> = [.fraction(0.25), .fraction(0.6), .fraction(1)]
@@ -31,6 +32,7 @@ struct ContentView: View {
         }
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

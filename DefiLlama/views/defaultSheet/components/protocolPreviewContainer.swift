@@ -9,7 +9,9 @@ import Foundation
 import SwiftUI
 
 struct ProtocolPreviewContainer: View {
-    let displayedProtocol: ProtocolElement
+    let displayedProtocol: MainProtocolElement
+    @State var showProtocolSheet: Bool = false
+
     var body: some View{
         VStack(alignment: .leading){
             HStack{
@@ -71,6 +73,12 @@ struct ProtocolPreviewContainer: View {
         .background(Color.l1)
         .cornerRadius(8)
         .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.borderLight, lineWidth: 1))
+        .onTapGesture {
+            showProtocolSheet.toggle()
+        }
+        .sheet(isPresented: $showProtocolSheet){
+            ProtocolSheetIndex(passedProtocol: displayedProtocol)
+        }
     }
 }
 

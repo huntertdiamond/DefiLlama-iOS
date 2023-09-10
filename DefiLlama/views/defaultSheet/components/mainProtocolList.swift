@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainProtocolList: View {
     
-    @State private var returnedProtocols: [ProtocolElement] = []
+    @State private var returnedProtocols: [MainProtocolElement] = []
     @State var isLoading: Bool = true
 
     var body: some View {
