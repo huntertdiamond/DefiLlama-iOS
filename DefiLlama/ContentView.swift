@@ -19,7 +19,7 @@ struct ContentView: View {
         }
         .padding(.horizontal, 12)
         .sheet(isPresented: $presentDefaultSheet) {
-            DefaultSheetIndex(selectedDetent: $selectedDetent)
+            PrimarySheetIndex(selectedDetent: $selectedDetent)
                 .presentationDetents(availableDetents, selection: $selectedDetent)
                 .presentationBackgroundInteraction(
                     .enabled(upThrough: .fraction(1))

@@ -8,8 +8,10 @@
 import SwiftUI
 import Charts
 
+
+
 struct TVLChart: View {
-    let tvlData: [TVLData] = TVLChartViewModel.shared.loadTVLData()
+    @State var tvlData: [TVLData] = []
     func formatLabel(price: Double) -> String {
         let billion = Int(price / 1_000_000_000)
         let million = Int((price.truncatingRemainder(dividingBy: 1_000_000_000)) / 1_000_000)
@@ -21,6 +23,7 @@ struct TVLChart: View {
             return "\(Int(price))"
         }
     }
+    
     var body: some View {
         VStack{
             Chart(tvlData) { data in

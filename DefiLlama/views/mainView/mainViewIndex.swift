@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct MainViewIndex: View {
+    let tvlData: [TVLData] = TVLChartViewModel.shared.loadTVLData()
+
     var body: some View {
         ScrollView(showsIndicators: false){
             VStack(alignment: .leading, spacing: 8){
                 MainViewHeader()
-                TVLChart()
+                TVLChart(tvlData: tvlData)
                 
                 Spacer()
             }

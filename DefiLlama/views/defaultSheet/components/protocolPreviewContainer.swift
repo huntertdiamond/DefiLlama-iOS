@@ -39,6 +39,9 @@ struct ProtocolPreviewContainer: View {
                     Text(FormatNumbers.shared.abbreviateDoubles(for: displayedProtocol.tvl))
                         .font(.body)
                         .fontWeight(.medium)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
+
                     Text("TVL")
                         .font(.caption2)
                         .foregroundColor(Color.textSecondary)
@@ -50,7 +53,8 @@ struct ProtocolPreviewContainer: View {
                         .font(.body)
                         .fontWeight(.medium)
                         .foregroundColor(displayedProtocol.change1D ?? 0.0 >= 0 ? Color.ourGreen : Color.ourRed)
-
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
                     Text("24h")
                         .font(.caption2)
                         .foregroundColor(Color.textSecondary)
@@ -61,7 +65,8 @@ struct ProtocolPreviewContainer: View {
                         .font(.body)
                         .fontWeight(.medium)
                         .foregroundColor(displayedProtocol.change7D ?? 0.0 >= 0 ? Color.ourGreen : Color.ourRed)
-                    
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.5)
                     Text("1w")
                         .font(.caption2)
                         .foregroundColor(Color.textSecondary)

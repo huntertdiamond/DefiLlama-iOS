@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DefaultSheetIndex: View {
+struct PrimarySheetIndex: View {
     @Binding var selectedDetent: PresentationDetent
     var placeholder: String = ""
     
@@ -15,10 +15,9 @@ struct DefaultSheetIndex: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8){
-            SmallSheetDisplay()
+            PrimarySheetContent()
             
         }
-        .preferredColorScheme(.light)
         .padding()
    
     }
@@ -28,7 +27,7 @@ struct DefaultSheetIndex_Previews: PreviewProvider {
     static var searchText: String = ""
     
     static var previews: some View {
-        DefaultSheetIndex(selectedDetent: .constant(.fraction(0.25)))
+        PrimarySheetIndex(selectedDetent: .constant(.fraction(0.25)))
     }
 }
 
