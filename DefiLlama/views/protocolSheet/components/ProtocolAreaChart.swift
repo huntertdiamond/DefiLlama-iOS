@@ -14,6 +14,7 @@ struct ProtocolAreaChart: View {
     
     @State var isLoading: Bool = true
     @State var dataToChart: [TVLByChain] = []
+    
     func mapToTVLByChain(chainTvls: [String: ChainTvl]?) -> [TVLByChain] {
         guard let chainTvls = chainTvls else { return [] }
         

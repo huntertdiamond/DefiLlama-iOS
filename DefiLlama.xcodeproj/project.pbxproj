@@ -23,6 +23,7 @@
 		D57E3C2E2AAE22E000110787 /* ProtocolTVLChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C2D2AAE22E000110787 /* ProtocolTVLChart.swift */; };
 		D57E3C302AAE298100110787 /* ProtocolAreaChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C2F2AAE298100110787 /* ProtocolAreaChart.swift */; };
 		D57E3C322AAE3B1100110787 /* protocolChartIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C312AAE3B1100110787 /* protocolChartIndex.swift */; };
+		D57E3C352AAE3D3700110787 /* protocolChartContainerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C342AAE3D3600110787 /* protocolChartContainerHeader.swift */; };
 		D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */; };
 		D5C487402AACCD6A0089DE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873F2AACCD6A0089DE07 /* ContentView.swift */; };
 		D5C487422AACCD6B0089DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C487412AACCD6B0089DE07 /* Assets.xcassets */; };
@@ -38,9 +39,7 @@
 		D5ECC39F2AAD032E00D4216B /* placeholderTVL.json in Resources */ = {isa = PBXBuildFile; fileRef = D5ECC39E2AAD032E00D4216B /* placeholderTVL.json */; };
 		D5ECC3A12AAD035500D4216B /* tvlChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ECC3A02AAD035500D4216B /* tvlChart.swift */; };
 		D5ECC3A32AAD042100D4216B /* tvlChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ECC3A22AAD042100D4216B /* tvlChartViewModel.swift */; };
-		D5ECC3A52AAD107B00D4216B /* mediumSheetDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ECC3A42AAD107B00D4216B /* mediumSheetDisplay.swift */; };
-		D5ECC3A72AAD109B00D4216B /* largeSheetDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ECC3A62AAD109B00D4216B /* largeSheetDisplay.swift */; };
-		D5ECC3A92AAD10AF00D4216B /* smallSheetDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ECC3A82AAD10AF00D4216B /* smallSheetDisplay.swift */; };
+		D5ECC3A92AAD10AF00D4216B /* primarySheetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5ECC3A82AAD10AF00D4216B /* primarySheetContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +59,7 @@
 		D57E3C2D2AAE22E000110787 /* ProtocolTVLChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolTVLChart.swift; sourceTree = "<group>"; };
 		D57E3C2F2AAE298100110787 /* ProtocolAreaChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolAreaChart.swift; sourceTree = "<group>"; };
 		D57E3C312AAE3B1100110787 /* protocolChartIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolChartIndex.swift; sourceTree = "<group>"; };
+		D57E3C342AAE3D3600110787 /* protocolChartContainerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolChartContainerHeader.swift; sourceTree = "<group>"; };
 		D5C4873A2AACCD6A0089DE07 /* DefiLlama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiLlama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiLlamaApp.swift; sourceTree = "<group>"; };
 		D5C4873F2AACCD6A0089DE07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,9 +76,7 @@
 		D5ECC39E2AAD032E00D4216B /* placeholderTVL.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = placeholderTVL.json; sourceTree = "<group>"; };
 		D5ECC3A02AAD035500D4216B /* tvlChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvlChart.swift; sourceTree = "<group>"; };
 		D5ECC3A22AAD042100D4216B /* tvlChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvlChartViewModel.swift; sourceTree = "<group>"; };
-		D5ECC3A42AAD107B00D4216B /* mediumSheetDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mediumSheetDisplay.swift; sourceTree = "<group>"; };
-		D5ECC3A62AAD109B00D4216B /* largeSheetDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = largeSheetDisplay.swift; sourceTree = "<group>"; };
-		D5ECC3A82AAD10AF00D4216B /* smallSheetDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smallSheetDisplay.swift; sourceTree = "<group>"; };
+		D5ECC3A82AAD10AF00D4216B /* primarySheetContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primarySheetContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +111,20 @@
 		D57E3C2C2AAE22D100110787 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				D57E3C332AAE3D1F00110787 /* charts */,
 				D57E3C2F2AAE298100110787 /* ProtocolAreaChart.swift */,
 				D57E3C2D2AAE22E000110787 /* ProtocolTVLChart.swift */,
 				D57E3C312AAE3B1100110787 /* protocolChartIndex.swift */,
+				D57E3C342AAE3D3600110787 /* protocolChartContainerHeader.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		D57E3C332AAE3D1F00110787 /* charts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = charts;
 			sourceTree = "<group>";
 		};
 		D5C487312AACCD6A0089DE07 = {
@@ -233,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				D56AF3FD2AAD38380087EE26 /* protocolPreviewContainer.swift */,
-				D56AF4022AAD42460087EE26 /* mainProtocolList.swift */,
 				D57E3C282AAE113E00110787 /* SheetDisplaySelector.swift */,
 				D57E3C2A2AAE11B400110787 /* MainSheetHeader.swift */,
 			);
@@ -260,9 +266,8 @@
 		D5ECC39C2AAD022800D4216B /* displays */ = {
 			isa = PBXGroup;
 			children = (
-				D5ECC3A42AAD107B00D4216B /* mediumSheetDisplay.swift */,
-				D5ECC3A62AAD109B00D4216B /* largeSheetDisplay.swift */,
-				D5ECC3A82AAD10AF00D4216B /* smallSheetDisplay.swift */,
+				D56AF4022AAD42460087EE26 /* mainProtocolList.swift */,
+				D5ECC3A82AAD10AF00D4216B /* primarySheetContent.swift */,
 			);
 			path = displays;
 			sourceTree = "<group>";
@@ -363,14 +368,13 @@
 				D56AF4092AAD53990087EE26 /* chainTabSelector.swift in Sources */,
 				D5C4875D2AACD9300089DE07 /* Colors.swift in Sources */,
 				D56AF3FC2AAD38110087EE26 /* searchBar.swift in Sources */,
+				D57E3C352AAE3D3700110787 /* protocolChartContainerHeader.swift in Sources */,
 				D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */,
 				D56AF40C2AAD55700087EE26 /* protocolSheetIndex.swift in Sources */,
 				D5ECC3A32AAD042100D4216B /* tvlChartViewModel.swift in Sources */,
-				D5ECC3A52AAD107B00D4216B /* mediumSheetDisplay.swift in Sources */,
 				D57E3C292AAE113E00110787 /* SheetDisplaySelector.swift in Sources */,
-				D5ECC3A92AAD10AF00D4216B /* smallSheetDisplay.swift in Sources */,
+				D5ECC3A92AAD10AF00D4216B /* primarySheetContent.swift in Sources */,
 				D5C487592AACD5610089DE07 /* allChains.swift in Sources */,
-				D5ECC3A72AAD109B00D4216B /* largeSheetDisplay.swift in Sources */,
 				D5ECC3A12AAD035500D4216B /* tvlChart.swift in Sources */,
 				D56AF4032AAD42460087EE26 /* mainProtocolList.swift in Sources */,
 				D57E3C252AAD63C100110787 /* tvlDataModel.swift in Sources */,
