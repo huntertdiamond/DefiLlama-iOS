@@ -11,7 +11,7 @@ final class StablecoinDataManager {
     static let shared =  StablecoinDataManager()
     private init() {}
     
-    func fetchStablecoinTVL() async throws -> StablecoinOwner {
+    func fetchStablecoinTVL() async throws -> [PeggedAsset] {
 //        print("fetchMainProtocolEndpoint function called")
 
         let urlString = "https://stablecoins.llama.fi/stablecoins?includePrices=true"
@@ -37,11 +37,11 @@ final class StablecoinDataManager {
 //            print("HTTP response received, status code: \(httpResponse.statusCode), attempting to decode data...")
             
             do {
-                let stablecoinTVLData = try JSONDecoder().decode(StablecoinOwner.self, from: data)
+                let unsortedData = try JSONDecoder().decode(StablecoinOwner.self, from: data)
 //                print("Successfully decoded protocol elements:")
- 
-                
-                return stablecoinTVLData
+                let filteredData = filterStablecoinData(for: unsortedData)
+                let sortedData = sortByMarketCap(assets: filteredData)
+                return sortedData
             } catch {
                 print("Decoding error: \(error)")
                 throw error
@@ -51,5 +51,16 @@ final class StablecoinDataManager {
             throw error
         }
     }
-    
+    func filterStablecoinData(for stablecoinOwner: StablecoinOwner) -> [PeggedAsset] {
+        return stablecoinOwner.peggedAssets ?? []
+    }
+
+    func sortByMarketCap(assets: [PeggedAsset]) -> [PeggedAsset] {
+        return assets.sorted { (asset1, asset2) -> Bool in
+            let peggedUSD1 = asset1.circulating?.peggedUSD ?? 0
+            let peggedUSD2 = asset2.circulating?.peggedUSD ?? 0
+            return peggedUSD1 > peggedUSD2
+        }
+    }
+
 }

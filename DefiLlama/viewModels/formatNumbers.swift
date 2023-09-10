@@ -15,11 +15,14 @@ final class FormatNumbers {
     func abbreviateDoubles(for price: Double) -> String {
         let billion = price / 1_000_000_000
         let million = (price.truncatingRemainder(dividingBy: 1_000_000_000)) / 1_000_000
+        let thousand = (price.truncatingRemainder(dividingBy: 1_000_000)) / 1_000
         
         if billion >= 1.0 {
             return String(format: "%.2fB", billion)
         } else if million >= 1.0 {
             return String(format: "%.2fM", million)
+        } else if thousand >= 1.0 {
+            return String(format: "%.2fK", thousand)
         } else {
             return String(format: "%.2f", price)
         }

@@ -31,7 +31,7 @@ struct StableCoinPreviewContainer: View {
             Spacer()
             StablecoinPreviewItem(valueDisplayed: "$\(String(format: "%.2f", displayedStable.price ?? 0.00))", caption: "Price")
             Spacer()
-            StablecoinPreviewItem(valueDisplayed: "45%", caption: "Dominance")
+            StablecoinPreviewItem(valueDisplayed: "\(displayedStable.noOfChains)", caption: "Chains")
             
         }
         .padding(12)

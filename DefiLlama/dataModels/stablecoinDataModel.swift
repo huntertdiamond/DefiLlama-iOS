@@ -16,6 +16,14 @@ struct PeggedAsset: Codable {
     let delisted: Bool?
     let price: Double?
     var dominance: Double?
+    var percentOffPeg: Double {
+          guard let price = price else { return 0 }
+          return abs((price - 1) / 1) * 100
+      }
+      
+      var noOfChains: Int {
+          return chains?.count ?? 0
+      }
 }
 
 struct Circulating: Codable {

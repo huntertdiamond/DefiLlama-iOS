@@ -27,7 +27,6 @@
 		D57E3C382AAE3E9C00110787 /* mainViewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C372AAE3E9C00110787 /* mainViewDataManager.swift */; };
 		D57E3C3A2AAE40AE00110787 /* stablecoinDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C392AAE40AE00110787 /* stablecoinDataModel.swift */; };
 		D57E3C3D2AAE418500110787 /* stablecoinDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C3C2AAE418500110787 /* stablecoinDataManager.swift */; };
-		D57E3C3F2AAE423A00110787 /* stablecoinDisplayMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C3E2AAE423A00110787 /* stablecoinDisplayMain.swift */; };
 		D57E3C422AAE568500110787 /* selectedCategoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C412AAE568500110787 /* selectedCategoryObject.swift */; };
 		D57E3C442AAE593E00110787 /* stableCoinPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C432AAE593E00110787 /* stableCoinPreviewContainer.swift */; };
 		D57E3C462AAE5E7100110787 /* stablecoinSheetDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C452AAE5E7100110787 /* stablecoinSheetDisplay.swift */; };
@@ -71,7 +70,6 @@
 		D57E3C372AAE3E9C00110787 /* mainViewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewDataManager.swift; sourceTree = "<group>"; };
 		D57E3C392AAE40AE00110787 /* stablecoinDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stablecoinDataModel.swift; sourceTree = "<group>"; };
 		D57E3C3C2AAE418500110787 /* stablecoinDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stablecoinDataManager.swift; sourceTree = "<group>"; };
-		D57E3C3E2AAE423A00110787 /* stablecoinDisplayMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stablecoinDisplayMain.swift; sourceTree = "<group>"; };
 		D57E3C412AAE568500110787 /* selectedCategoryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedCategoryObject.swift; sourceTree = "<group>"; };
 		D57E3C432AAE593E00110787 /* stableCoinPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stableCoinPreviewContainer.swift; sourceTree = "<group>"; };
 		D57E3C452AAE5E7100110787 /* stablecoinSheetDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stablecoinSheetDisplay.swift; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 		D57E3C402AAE424D00110787 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				D57E3C3E2AAE423A00110787 /* stablecoinDisplayMain.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -426,7 +423,6 @@
 				D5ECC3A32AAD042100D4216B /* tvlChartViewModel.swift in Sources */,
 				D57E3C292AAE113E00110787 /* SheetDisplaySelector.swift in Sources */,
 				D5ECC3A92AAD10AF00D4216B /* protocolSheetDisplay.swift in Sources */,
-				D57E3C3F2AAE423A00110787 /* stablecoinDisplayMain.swift in Sources */,
 				D57E3C422AAE568500110787 /* selectedCategoryObject.swift in Sources */,
 				D57E3C3D2AAE418500110787 /* stablecoinDataManager.swift in Sources */,
 				D5C487592AACD5610089DE07 /* allChains.swift in Sources */,
