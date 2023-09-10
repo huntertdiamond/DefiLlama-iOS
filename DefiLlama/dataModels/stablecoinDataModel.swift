@@ -14,6 +14,8 @@ struct PeggedAsset: Codable {
     let chainCirculating: ChainCirculating?
     let chains: [String]?
     let delisted: Bool?
+    let price: Double?
+    var dominance: Double?
 }
 
 struct Circulating: Codable {

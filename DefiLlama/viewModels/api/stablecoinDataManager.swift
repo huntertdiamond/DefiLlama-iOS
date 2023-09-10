@@ -14,7 +14,7 @@ final class StablecoinDataManager {
     func fetchStablecoinTVL() async throws -> StablecoinOwner {
 //        print("fetchMainProtocolEndpoint function called")
 
-        let urlString = "https://stablecoins.llama.fi/stablecoins?includePrices=false"
+        let urlString = "https://stablecoins.llama.fi/stablecoins?includePrices=true"
         guard let url = URL(string: urlString) else {
             print("Error forming URL from string: \(urlString)")
             throw URLError(.badURL)

@@ -20,8 +20,7 @@ struct ContentView: View {
         }
         .padding(.horizontal, 12)
         .sheet(isPresented: $presentDefaultSheet) {
-            PrimarySheetIndex(selectedDetent: $selectedDetent)
-//                .environmentObject(SelectedCategory())
+            PrimarySheetIndex(selectedDetent: $selectedDetent )
                 .presentationDetents(availableDetents, selection: $selectedDetent)
                 .presentationBackgroundInteraction(
                     .enabled(upThrough: .fraction(1))
@@ -38,5 +37,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(SelectedCategory())
+
     }
 }

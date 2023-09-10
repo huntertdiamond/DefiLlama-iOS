@@ -12,7 +12,6 @@ struct PrimarySheetIndex: View {
     
     @State var searchText: String = ""
     @EnvironmentObject var selectedCategory: SelectedCategory
-
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             MainSheetHeader()
@@ -21,9 +20,7 @@ struct PrimarySheetIndex: View {
                 ProtocolSheetDisplay()
             }
             if selectedCategory.category == .stablecoinData {
-                // Here, display the view corresponding to the "Stablecoin Data" category
-                // For example:
-                // StablecoinDataSheetDisplay()
+                StablecoinSheetDisplay(selectedDetent: $selectedDetent)
             }
         }
         .padding()

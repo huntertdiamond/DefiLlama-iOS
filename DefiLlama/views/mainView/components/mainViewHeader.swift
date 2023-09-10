@@ -11,7 +11,6 @@ import SwiftUI
 
 struct MainViewHeader: View {
     @EnvironmentObject var selectedCategory: SelectedCategory
-
     var body: some View{
         VStack(alignment:.leading, spacing: 8){
             VStack(alignment:.leading, spacing: 2){
@@ -30,7 +29,7 @@ struct MainViewHeader: View {
                         .font(.callout)
                         .foregroundColor(Color.textSecondary)
                     Spacer()
-                    Text("$124.287 B")
+                    Text("$\(FormatNumbers.shared.abbreviateDoubles(for: 12313451))")
                         .fontWeight(.bold)
                 }
                 HStack{
