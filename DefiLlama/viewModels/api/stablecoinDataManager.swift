@@ -11,7 +11,7 @@ final class StablecoinDataManager {
     static let shared =  StablecoinDataManager()
     private init() {}
     
-    func fetchSpecificProtocol() async throws -> StablecoinOwner {
+    func fetchStablecoinTVL() async throws -> StablecoinOwner {
 //        print("fetchMainProtocolEndpoint function called")
 
         let urlString = "https://stablecoins.llama.fi/stablecoins?includePrices=false"
@@ -51,4 +51,5 @@ final class StablecoinDataManager {
             throw error
         }
     }
+    
 }

@@ -7,14 +7,26 @@
 
 import SwiftUI
 
-struct stablecoinDisplayMain: View {
+struct StablecoinDisplayMain: View {
+    @State var stableCoinData: [PeggedAsset] = []
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("howdy")
+        }
+        .task {
+            do {
+                let stablecoinOwner = try await StablecoinDataManager.shared.fetchStablecoinTVL()
+                self.stableCoinData = MainViewViewModel.shared.filterStablecoinData(for: stablecoinOwner)
+            }
+            catch {
+                
+            }
+        }
     }
 }
 
 struct stablecoinDisplayMain_Previews: PreviewProvider {
     static var previews: some View {
-        stablecoinDisplayMain()
+        StablecoinDisplayMain()
     }
 }

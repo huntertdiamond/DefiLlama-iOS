@@ -8,8 +8,13 @@
 import Foundation
 
 
-final class MainViewDataManager {
-    static let shared =  MainViewDataManager()
+final class MainViewViewModel {
+    static let shared =  MainViewViewModel()
     private init() {}
     
+    
+    func filterStablecoinData(for stablecoinOwner: StablecoinOwner) -> [PeggedAsset] {
+        return stablecoinOwner.peggedAssets ?? []
+    }
+
 }
