@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct MainSheetDisplaySelector: View {
-    @Binding var selectedCategory: Categories
+    @EnvironmentObject var selectedCategory: SelectedCategory
     @State private var isMenuPresented: Bool = false
 
     var body: some View {
@@ -19,7 +19,7 @@ struct MainSheetDisplaySelector: View {
                 ForEach(Categories.allCases, id: \.self) { category in
                     Button(action: {
                         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
-                        selectedCategory = category
+                        selectedCategory.category = category
                         isMenuPresented = false
 
                     }) {
@@ -29,7 +29,7 @@ struct MainSheetDisplaySelector: View {
             }
              label: {
                 HStack {
-                    Text(selectedCategory.rawValue)
+                    Text(selectedCategory.category.rawValue)
                         .font(.title2)
                         .fontWeight(.semibold)
                     Image(systemName: isMenuPresented ? "chevron.up" : "chevron.down")

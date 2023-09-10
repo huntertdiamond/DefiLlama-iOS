@@ -10,6 +10,8 @@ import SwiftUI
 
 
 struct MainViewHeader: View {
+    @EnvironmentObject var selectedCategory: SelectedCategory
+
     var body: some View{
         VStack(alignment:.leading, spacing: 8){
             VStack(alignment:.leading, spacing: 2){

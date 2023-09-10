@@ -9,18 +9,17 @@ import Foundation
 import SwiftUI
 
 struct MainSheetHeader: View {
-    @State var selectedCategory: Categories
-
+    
     var body: some View{
         HStack {
-            MainSheetDisplaySelector(selectedCategory: $selectedCategory)
+            MainSheetDisplaySelector()
             Spacer()
-
+            
             Button(action:{} ){
-                    Image(systemName: "gearshape")
-                        .fontWeight(.bold)
-                        .font(.title3)
-                }
+                Image(systemName: "gearshape")
+                    .fontWeight(.bold)
+                    .font(.title3)
+            }
         }
     }
 }

@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct DefiLlamaApp: App {
+    @StateObject private var selectedCategory = SelectedCategory()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .preferredColorScheme(.light)
-
+                .environmentObject(selectedCategory)
         }
     }
 }

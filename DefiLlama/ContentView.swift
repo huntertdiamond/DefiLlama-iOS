@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var presentDefaultSheet: Bool = true
     @State var selectedDetent: PresentationDetent = .fraction(0.25)
     private let availableDetents: Set<PresentationDetent> = [.fraction(0.25), .fraction(0.6), .fraction(1)]
+    @State var selectedDisplay: String = ""
 
     var body: some View {
         VStack {
@@ -20,6 +21,7 @@ struct ContentView: View {
         .padding(.horizontal, 12)
         .sheet(isPresented: $presentDefaultSheet) {
             PrimarySheetIndex(selectedDetent: $selectedDetent)
+//                .environmentObject(SelectedCategory())
                 .presentationDetents(availableDetents, selection: $selectedDetent)
                 .presentationBackgroundInteraction(
                     .enabled(upThrough: .fraction(1))

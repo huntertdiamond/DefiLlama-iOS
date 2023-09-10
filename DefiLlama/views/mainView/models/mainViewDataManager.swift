@@ -16,5 +16,10 @@ final class MainViewViewModel {
     func filterStablecoinData(for stablecoinOwner: StablecoinOwner) -> [PeggedAsset] {
         return stablecoinOwner.peggedAssets ?? []
     }
+    func calculateStablcoinTotalValue(of assets: [PeggedAsset]) -> Double {
+        return assets.reduce(0) { (total, asset) in
+            total + (asset.circulating?.peggedUSD ?? 0)
+        }
+    }
 
 }

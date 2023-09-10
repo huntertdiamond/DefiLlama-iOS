@@ -9,14 +9,16 @@ import SwiftUI
 
 struct StablecoinDisplayMain: View {
     @State var stableCoinData: [PeggedAsset] = []
+    @State var stablecoinTotalValue: Double = 89
     var body: some View {
         VStack{
-            Text("howdy")
+            Text("$\(FormatNumbers.shared.abbreviateDoubles(for: stablecoinTotalValue))")
         }
         .task {
             do {
                 let stablecoinOwner = try await StablecoinDataManager.shared.fetchStablecoinTVL()
                 self.stableCoinData = MainViewViewModel.shared.filterStablecoinData(for: stablecoinOwner)
+                self.stablecoinTotalValue = MainViewViewModel.shared.calculateStablcoinTotalValue(of: stableCoinData)
             }
             catch {
                 
