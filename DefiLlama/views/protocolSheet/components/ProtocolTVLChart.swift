@@ -23,13 +23,11 @@ struct ProtocolTVLChart: View{
             return "\(Int(price))"
         }
     }
-    let passedProtocol: MainProtocolElement
-    let receivedProtocolElement: SingleProtocol
+
     var body: some View{
         
         
         VStack(alignment: .leading, spacing: 12){
-            ProtocolChartContainerHeader(passedProtocol: passedProtocol)
             VStack{
                 Chart(tvlData) { data in
                     LineMark(
@@ -50,7 +48,7 @@ struct ProtocolTVLChart: View{
                 }
             }
             .frame(height: 350)
-
+            
         }
         .padding(12)
         .background(Color.l1)
@@ -59,9 +57,13 @@ struct ProtocolTVLChart: View{
 }
 
 
+
 struct ProtocolChartContainerHeader: View {
     let passedProtocol: MainProtocolElement
-
+    
+    @State private var selectedDate = Date()
+    @State private var showingDatePicker = false
+    @Binding var displayedChart: ProtocolChartsDisplay
     var body: some View {
         HStack{
             VStack(alignment: .leading, spacing: 0){
@@ -74,21 +76,29 @@ struct ProtocolChartContainerHeader: View {
             }
             Spacer()
             HStack{
-                Image(systemName: "calendar")
-                    .fontWeight(.bold)
-                    .padding(8)
-                    .background(Color.ourBlueLight)
-                    .clipShape(Circle())
-                Image(systemName: "pencil")
-                    .fontWeight(.bold)
-
-                    .padding(8)
-                    .background(Color.ourBlueLight)
-                    .clipShape(Circle())
+                
+                
+                Menu {
+                    Button("TVL", action: { displayedChart = .tvl })
+                    Button("TVL by chain", action: { displayedChart = .tvlByChain })
+                    Button("Tokens (USD)", action: { displayedChart = .tokens})
+                } label: {
+                    Image(systemName: "ellipsis")
+                        .fontWeight(.bold)
+                        .frame(width: 30, height: 30)
+                        .background(Color.ourBlueLight)
+                        .clipShape(Circle())
+                }
             }
             .font(.subheadline)
             .fontWeight(.bold)
             .foregroundColor(Color.ourBlue)
         }
     }
+}
+
+enum ProtocolChartsDisplay: String {
+    case tvl = "TVL"
+    case tvlByChain = "TVL by Chain"
+    case tokens = "Tokens (USD)"
 }

@@ -22,6 +22,7 @@
 		D57E3C2B2AAE11B500110787 /* MainSheetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C2A2AAE11B400110787 /* MainSheetHeader.swift */; };
 		D57E3C2E2AAE22E000110787 /* ProtocolTVLChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C2D2AAE22E000110787 /* ProtocolTVLChart.swift */; };
 		D57E3C302AAE298100110787 /* ProtocolAreaChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C2F2AAE298100110787 /* ProtocolAreaChart.swift */; };
+		D57E3C322AAE3B1100110787 /* protocolChartIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C312AAE3B1100110787 /* protocolChartIndex.swift */; };
 		D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */; };
 		D5C487402AACCD6A0089DE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873F2AACCD6A0089DE07 /* ContentView.swift */; };
 		D5C487422AACCD6B0089DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C487412AACCD6B0089DE07 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		D57E3C2A2AAE11B400110787 /* MainSheetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSheetHeader.swift; sourceTree = "<group>"; };
 		D57E3C2D2AAE22E000110787 /* ProtocolTVLChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolTVLChart.swift; sourceTree = "<group>"; };
 		D57E3C2F2AAE298100110787 /* ProtocolAreaChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolAreaChart.swift; sourceTree = "<group>"; };
+		D57E3C312AAE3B1100110787 /* protocolChartIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolChartIndex.swift; sourceTree = "<group>"; };
 		D5C4873A2AACCD6A0089DE07 /* DefiLlama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiLlama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiLlamaApp.swift; sourceTree = "<group>"; };
 		D5C4873F2AACCD6A0089DE07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,7 +106,6 @@
 			children = (
 				D57E3C2C2AAE22D100110787 /* components */,
 				D56AF40B2AAD55700087EE26 /* protocolSheetIndex.swift */,
-				D57E3C2F2AAE298100110787 /* ProtocolAreaChart.swift */,
 			);
 			path = protocolSheet;
 			sourceTree = "<group>";
@@ -112,7 +113,9 @@
 		D57E3C2C2AAE22D100110787 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				D57E3C2F2AAE298100110787 /* ProtocolAreaChart.swift */,
 				D57E3C2D2AAE22E000110787 /* ProtocolTVLChart.swift */,
+				D57E3C312AAE3B1100110787 /* protocolChartIndex.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				D5C487672AACE12E0089DE07 /* spacerStack.swift in Sources */,
 				D57E3C302AAE298100110787 /* ProtocolAreaChart.swift in Sources */,
 				D5C487642AACE0780089DE07 /* defaultSheetIndex.swift in Sources */,
+				D57E3C322AAE3B1100110787 /* protocolChartIndex.swift in Sources */,
 				D56AF4072AAD4ABF0087EE26 /* formatNumbers.swift in Sources */,
 				D5C4875F2AACDEBF0089DE07 /* mainViewHeader.swift in Sources */,
 				D57E3C272AAD66EF00110787 /* specificProtocolDataModel.swift in Sources */,

@@ -69,14 +69,13 @@ struct ProtocolAreaChart: View {
                 }
                 
                 .frame(height: 350)
-                .padding()
             }
         }
         .task {
             do {
-                self.receivedProtocolElement = try await ProtocolDataManager.shared.fetchSpecificProtocol(for: passedProtocol.slug)
-                self.isLoading = false
+       
                 self.dataToChart = mapToTVLByChain(chainTvls: receivedProtocolElement.chainTvls)
+                self.isLoading = false
             } catch {
                 // Handle the error here, possibly with an alert or some user-friendly message
             }
@@ -105,7 +104,7 @@ struct ProtocolAreaChart_Previews: PreviewProvider {
             forkedFrom: nil, // This field wasn't provided in your data
             oracles: nil, // This field wasn't provided in your data
             listedAt: nil, // This field wasn't provided in your data
-            slug: "binance-cex",
+            slug: "binance",
             tvl: 14096136354.6758,
             chainTvls: [
                 "Ethereum": 14049389624.225142,

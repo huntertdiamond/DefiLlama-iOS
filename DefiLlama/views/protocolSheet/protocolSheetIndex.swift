@@ -33,7 +33,7 @@ struct ProtocolSheetIndex: View {
                 ProtocolHeader(passedProtocol: passedProtocol)
                 if let tvlData = receivedProtocolElement.tvl, !tvlData.isEmpty {
                     
-                    ProtocolTVLChart(tvlData: convertToTVLData(tvlArray: tvlData), passedProtocol: passedProtocol, receivedProtocolElement: receivedProtocolElement)
+                    ProtocolChartIndex(tvlData: convertToTVLData(tvlArray: tvlData), passedProtocol: passedProtocol, receivedProtocolElement: receivedProtocolElement)
                     
                 }
                 ProtocolInfoBox(passedProtocol: passedProtocol, receivedProtocolElement: receivedProtocolElement)
