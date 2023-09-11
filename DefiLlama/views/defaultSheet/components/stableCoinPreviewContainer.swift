@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StableCoinPreviewContainer: View {
     let displayedStable: PeggedAsset
+    
     var body: some View {
         HStack(){
             HStack{

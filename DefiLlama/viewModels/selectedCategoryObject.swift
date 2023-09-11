@@ -10,3 +10,6 @@ import SwiftUI
 class SelectedCategory: ObservableObject {
     @Published var category: Categories = .protocolRankings
 }
+class SelectedChain: ObservableObject {
+    @Published var displayedChain: BigTenChains = .all
+}

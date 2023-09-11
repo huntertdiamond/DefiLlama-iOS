@@ -27,19 +27,19 @@ struct ChainTab: View {
 }
 
 struct ChainTabSelector: View {
-    @State private var selectedTab: BigTenChains = .all // Assume you have 'all' enum case in your BigTenChains enum
-    
+    @EnvironmentObject var selectedChain: SelectedChain
+
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(BigTenChains.allCases, id: \.self) { chain in
-                    ChainTab(title: chain.rawValue, isSelected: chain == selectedTab)
+                    ChainTab(title: chain.rawValue, isSelected: chain == selectedChain.displayedChain)
                         .onTapGesture {
-                            selectedTab = chain
+                            selectedChain.displayedChain = chain
+                            print(chain.rawValue)
                         }
                 }
             }
         }
     }
 }
-

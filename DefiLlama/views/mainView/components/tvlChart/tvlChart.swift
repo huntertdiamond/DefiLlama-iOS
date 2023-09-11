@@ -11,7 +11,7 @@ import Charts
 
 
 struct TVLChart: View {
-    @State var tvlData: [TVLData] = []
+    var tvlData: [TVLData]
     func formatLabel(price: Double) -> String {
         let billion = Int(price / 1_000_000_000)
         let million = Int((price.truncatingRemainder(dividingBy: 1_000_000_000)) / 1_000_000)
@@ -53,8 +53,3 @@ struct TVLChart: View {
     }
 }
 
-struct tvlChart_Previews: PreviewProvider {
-    static var previews: some View {
-        TVLChart()
-    }
-}

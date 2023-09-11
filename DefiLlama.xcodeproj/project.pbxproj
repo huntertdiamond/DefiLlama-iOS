@@ -31,6 +31,12 @@
 		D57E3C442AAE593E00110787 /* stableCoinPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C432AAE593E00110787 /* stableCoinPreviewContainer.swift */; };
 		D57E3C462AAE5E7100110787 /* stablecoinSheetDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C452AAE5E7100110787 /* stablecoinSheetDisplay.swift */; };
 		D57E3C482AAE62F100110787 /* stablecoinSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C472AAE62F100110787 /* stablecoinSheetViewModel.swift */; };
+		D57E3C4A2AAEA3F200110787 /* globalDataByChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C492AAEA3F200110787 /* globalDataByChain.swift */; };
+		D57E3C4C2AAEA4FA00110787 /* chainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C4B2AAEA4FA00110787 /* chainDataManager.swift */; };
+		D57E3C4E2AAEADC500110787 /* yieldSheetDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C4D2AAEADC500110787 /* yieldSheetDisplay.swift */; };
+		D57E3C502AAEAE5200110787 /* yieldDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C4F2AAEAE5200110787 /* yieldDataModel.swift */; };
+		D57E3C522AAEB2B000110787 /* YieldPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C512AAEB2B000110787 /* YieldPreviewContainer.swift */; };
+		D57E3C542AAEB2FF00110787 /* yieldDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C532AAEB2FF00110787 /* yieldDataManager.swift */; };
 		D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */; };
 		D5C487402AACCD6A0089DE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873F2AACCD6A0089DE07 /* ContentView.swift */; };
 		D5C487422AACCD6B0089DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C487412AACCD6B0089DE07 /* Assets.xcassets */; };
@@ -74,6 +80,12 @@
 		D57E3C432AAE593E00110787 /* stableCoinPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stableCoinPreviewContainer.swift; sourceTree = "<group>"; };
 		D57E3C452AAE5E7100110787 /* stablecoinSheetDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stablecoinSheetDisplay.swift; sourceTree = "<group>"; };
 		D57E3C472AAE62F100110787 /* stablecoinSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stablecoinSheetViewModel.swift; sourceTree = "<group>"; };
+		D57E3C492AAEA3F200110787 /* globalDataByChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalDataByChain.swift; sourceTree = "<group>"; };
+		D57E3C4B2AAEA4FA00110787 /* chainDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chainDataManager.swift; sourceTree = "<group>"; };
+		D57E3C4D2AAEADC500110787 /* yieldSheetDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yieldSheetDisplay.swift; sourceTree = "<group>"; };
+		D57E3C4F2AAEAE5200110787 /* yieldDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yieldDataModel.swift; sourceTree = "<group>"; };
+		D57E3C512AAEB2B000110787 /* YieldPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YieldPreviewContainer.swift; sourceTree = "<group>"; };
+		D57E3C532AAEB2FF00110787 /* yieldDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yieldDataManager.swift; sourceTree = "<group>"; };
 		D5C4873A2AACCD6A0089DE07 /* DefiLlama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiLlama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiLlamaApp.swift; sourceTree = "<group>"; };
 		D5C4873F2AACCD6A0089DE07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +167,8 @@
 			children = (
 				D56AF4002AAD413D0087EE26 /* protocolDataManager.swift */,
 				D57E3C3C2AAE418500110787 /* stablecoinDataManager.swift */,
+				D57E3C4B2AAEA4FA00110787 /* chainDataManager.swift */,
+				D57E3C532AAEB2FF00110787 /* yieldDataManager.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -224,6 +238,8 @@
 				D57E3C242AAD63C100110787 /* tvlDataModel.swift */,
 				D57E3C262AAD66EF00110787 /* specificProtocolDataModel.swift */,
 				D57E3C392AAE40AE00110787 /* stablecoinDataModel.swift */,
+				D57E3C492AAEA3F200110787 /* globalDataByChain.swift */,
+				D57E3C4F2AAEAE5200110787 /* yieldDataModel.swift */,
 			);
 			path = dataModels;
 			sourceTree = "<group>";
@@ -286,6 +302,7 @@
 				D57E3C282AAE113E00110787 /* SheetDisplaySelector.swift */,
 				D57E3C2A2AAE11B400110787 /* MainSheetHeader.swift */,
 				D57E3C432AAE593E00110787 /* stableCoinPreviewContainer.swift */,
+				D57E3C512AAEB2B000110787 /* YieldPreviewContainer.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -313,6 +330,7 @@
 			children = (
 				D5ECC3A82AAD10AF00D4216B /* protocolSheetDisplay.swift */,
 				D57E3C452AAE5E7100110787 /* stablecoinSheetDisplay.swift */,
+				D57E3C4D2AAEADC500110787 /* yieldSheetDisplay.swift */,
 			);
 			path = displays;
 			sourceTree = "<group>";
@@ -400,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57E3C502AAEAE5200110787 /* yieldDataModel.swift in Sources */,
 				D56AF3FE2AAD38380087EE26 /* protocolPreviewContainer.swift in Sources */,
 				D57E3C2B2AAE11B500110787 /* MainSheetHeader.swift in Sources */,
 				D57E3C482AAE62F100110787 /* stablecoinSheetViewModel.swift in Sources */,
@@ -407,17 +426,21 @@
 				D5C487672AACE12E0089DE07 /* spacerStack.swift in Sources */,
 				D57E3C302AAE298100110787 /* ProtocolAreaChart.swift in Sources */,
 				D5C487642AACE0780089DE07 /* defaultSheetIndex.swift in Sources */,
+				D57E3C542AAEB2FF00110787 /* yieldDataManager.swift in Sources */,
 				D57E3C322AAE3B1100110787 /* protocolChartIndex.swift in Sources */,
 				D56AF4072AAD4ABF0087EE26 /* formatNumbers.swift in Sources */,
 				D57E3C442AAE593E00110787 /* stableCoinPreviewContainer.swift in Sources */,
 				D5C4875F2AACDEBF0089DE07 /* mainViewHeader.swift in Sources */,
 				D57E3C272AAD66EF00110787 /* specificProtocolDataModel.swift in Sources */,
+				D57E3C4C2AAEA4FA00110787 /* chainDataManager.swift in Sources */,
 				D5C487402AACCD6A0089DE07 /* ContentView.swift in Sources */,
 				D56AF4092AAD53990087EE26 /* chainTabSelector.swift in Sources */,
 				D5C4875D2AACD9300089DE07 /* Colors.swift in Sources */,
+				D57E3C4A2AAEA3F200110787 /* globalDataByChain.swift in Sources */,
 				D56AF3FC2AAD38110087EE26 /* searchBar.swift in Sources */,
 				D57E3C352AAE3D3700110787 /* protocolChartContainerHeader.swift in Sources */,
 				D57E3C3A2AAE40AE00110787 /* stablecoinDataModel.swift in Sources */,
+				D57E3C4E2AAEADC500110787 /* yieldSheetDisplay.swift in Sources */,
 				D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */,
 				D56AF40C2AAD55700087EE26 /* protocolSheetIndex.swift in Sources */,
 				D5ECC3A32AAD042100D4216B /* tvlChartViewModel.swift in Sources */,
@@ -430,6 +453,7 @@
 				D56AF4032AAD42460087EE26 /* mainProtocolList.swift in Sources */,
 				D57E3C252AAD63C100110787 /* tvlDataModel.swift in Sources */,
 				D5C487552AACD1660089DE07 /* mainViewIndex.swift in Sources */,
+				D57E3C522AAEB2B000110787 /* YieldPreviewContainer.swift in Sources */,
 				D57E3C2E2AAE22E000110787 /* ProtocolTVLChart.swift in Sources */,
 				D57E3C462AAE5E7100110787 /* stablecoinSheetDisplay.swift in Sources */,
 				D56AF4052AAD49A70087EE26 /* imageView.swift in Sources */,

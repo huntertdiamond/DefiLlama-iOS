@@ -7,7 +7,9 @@
 
 import Foundation
 
-enum AllChains: String, CaseIterable {
+enum AllChains: String, CaseIterable, Codable {
+    case acala = "Acala"
+
     case arbitrum = "Arbitrum"
     case zkSyncEra = "zkSync Era"
     case base = "Base"
@@ -25,6 +27,8 @@ enum AllChains: String, CaseIterable {
     case concordium = "Concordium"
     case optimism = "Optimism"
     case cardano = "Cardano"
+    case conflux = "Conflux"
+
     case aurora = "Aurora"
     case boba = "Boba"
     case elastos = "Elastos"
@@ -50,12 +54,12 @@ enum AllChains: String, CaseIterable {
     case arbitrumNova = "Arbitrum Nova"
     case thunderCore = "ThunderCore"
     case aptos = "Aptos"
-    case near = "Near"
-    case smartBCH = "smartBCH"
+    case near = "NEAR"
+    case smartBCH = "SmartBCH"
     case bitcoin = "Bitcoin"
     case canto = "Canto"
     case doge = "Doge"
-    case neo = "NEO"
+    case neo = "Neo"
     case phantasma = "Phantasma"
     case juno = "Juno"
     case litecoin = "Litecoin"
@@ -70,6 +74,35 @@ enum AllChains: String, CaseIterable {
     case tron = "Tron"
     case onus = "Onus"
     case waves = "Waves"
+    case defichain = "Defichain"
+    case savannah = "Savannah <3"
+    case mixin = "Mixin"
+    case filecoin = "Filecoin"
+    case multiversX = "MultiversX"
+    case stride = "Stride"
+    case hedera = "Hedera"
+    case heco = "Heco"
+    case kusama = "Kusama"
+    case polkadot = "Polkadot"
+    case astar = "Astar"
+    case bifrost = "Bifrost"
+    case bitcoincash = "Bitcoincash"
+    case bobaBnb = "Boba_Bnb"
+    case carbon = "Carbon"
+    case cosmos = "Cosmos"
+    case cube = "Cube"
+    case karura = "Karura"
+    case kucoin = "Kucoin"
+    case libre = "Libre"
+    case milkomedaA1 = "Milkomeda A1"
+    case milkomedaC1 = "Milkomeda C1"
+    case nuls = "Nuls"
+    case oasis = "Oasis"
+    case obyte = "Obyte"
+    case ontology = "Ontology"
+    case reichain = "Reichain"
+    case rootstock = "Rootstock"
+    case vechain = "Vechain"
 }
 
 enum BigTenChains: String, CaseIterable {
@@ -85,4 +118,5 @@ enum BigTenChains: String, CaseIterable {
     case mixin = "Mixin"
     case solana = "Solana"
     case bitcoin = "Bitcoin"
+    
 }

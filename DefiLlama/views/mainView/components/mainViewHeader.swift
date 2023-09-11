@@ -11,10 +11,12 @@ import SwiftUI
 
 struct MainViewHeader: View {
     @EnvironmentObject var selectedCategory: SelectedCategory
+    @EnvironmentObject var selectedChain: SelectedChain
+    var displayedTVL: Double
     var body: some View{
         VStack(alignment:.leading, spacing: 8){
             VStack(alignment:.leading, spacing: 2){
-                Text("$37.856B")
+                Text("$\(FormatNumbers.shared.abbreviateDoubles(for: displayedTVL))")
                     .font(.title)
                     .fontWeight(.bold)
                 Text("Total Value Locked")
@@ -29,18 +31,17 @@ struct MainViewHeader: View {
                         .font(.callout)
                         .foregroundColor(Color.textSecondary)
                     Spacer()
-                    Text("$\(FormatNumbers.shared.abbreviateDoubles(for: 12313451))")
+                    Text("$\(FormatNumbers.shared.abbreviateDoubles(for: 124351000000))")
                         .fontWeight(.bold)
                 }
                 HStack{
                     Text("Volume (24h):")
                         .font(.callout)
-
                         .foregroundColor(Color.textSecondary)
                     
                     Spacer()
                     
-                    Text("$1.394B")
+                    Text("$880.98M")
                         .fontWeight(.bold)
                 }
                 HStack{
@@ -66,7 +67,19 @@ struct MainViewHeader: View {
 
 struct VIEWPreview: PreviewProvider {
     static var previews: some View {
-        MainViewHeader()
+        MainViewHeader(displayedTVL: 2)
+            .environmentObject(SelectedChain())
     }
 }
 
+
+
+struct MainViewInfoBoxController: View {
+    @EnvironmentObject var selectedChain: SelectedChain
+
+    var body: some View{
+        VStack{
+            
+        }
+    }
+}
