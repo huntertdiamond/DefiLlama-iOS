@@ -50,8 +50,8 @@ struct MainSheetDisplaySelector: View {
 
 enum Categories: String, CaseIterable {
     case protocolRankings = "Protocol Rankings"
-    case chainRanking = "Chains"
+//    case chainRanking = "Chains"
     case yields = "Yields"
-    case coins = "Coins"
+//    case coins = "Coins"
     case stablecoinData = "Stablecoins"
 }

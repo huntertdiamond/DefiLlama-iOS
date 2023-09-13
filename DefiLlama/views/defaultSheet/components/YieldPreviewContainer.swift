@@ -26,7 +26,7 @@ struct YieldPreviewContainer: View {
                 }
                 Spacer()
             }
-            .frame(width: 150)
+            .frame(width: 130)
             
             Spacer()
             StablecoinPreviewItem(valueDisplayed: "$\(FormatNumbers.shared.abbreviateInt(for: passedYield.tvlUsd ?? 0))", caption: "TVL")
@@ -34,15 +34,10 @@ struct YieldPreviewContainer: View {
             StablecoinPreviewItem(valueDisplayed: "\(FormatNumbers.shared.addPercentageSign(for: passedYield.apyBase ?? 0))", caption: "Base APY")
             Spacer()
             StablecoinPreviewItem(valueDisplayed: "\(FormatNumbers.shared.addPercentageSign(for: passedYield.apyReward ?? 0))", caption: "Reward APY")
-            VStack{
-                Image("\(String(describing: passedYield.chain?.rawValue))")
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                    .clipShape(Circle())
-            }
+
         }
         .padding(12)
-        .background(Color.l1)
+        .background(Color.sheetL1)
         .cornerRadius(8)
     }
 }

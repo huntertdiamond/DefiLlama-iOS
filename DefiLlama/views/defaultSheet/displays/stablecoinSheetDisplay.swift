@@ -75,7 +75,7 @@ struct StablecoinSorterChip: View {
             Text(option.rawValue)
         }
         .padding(6)
-        .background(selectedOption == option ? Color.ourBlueLight : Color.l1)
+        .background(selectedOption == option ? Color.ourBlueLight : Color.sheetL1)
         .cornerRadius(12)
         .foregroundColor(selectedOption == option ? Color.ourBlue : Color.textPrimary)
     }

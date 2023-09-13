@@ -22,6 +22,9 @@ struct PrimarySheetIndex: View {
             if selectedCategory.category == .stablecoinData {
                 StablecoinSheetDisplay(selectedDetent: $selectedDetent)
             }
+            if selectedCategory.category == .yields {
+                YieldSheetDisplay(selectedDetent: $selectedDetent)
+            }
         }
         .padding()
     }

@@ -41,6 +41,8 @@
 		D57E3C592AB133E300110787 /* shimmerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C582AB133E300110787 /* shimmerConfig.swift */; };
 		D57E3C782AB139BE00110787 /* chartPreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C772AB139BE00110787 /* chartPreLoader.swift */; };
 		D57E3C7A2AB139DA00110787 /* chartAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C792AB139DA00110787 /* chartAnimation.swift */; };
+		D57E3C7C2AB1424100110787 /* mainViewPreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C7B2AB1424100110787 /* mainViewPreLoader.swift */; };
+		D57E3C802AB145A000110787 /* chainsSheetDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C7F2AB145A000110787 /* chainsSheetDisplay.swift */; };
 		D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */; };
 		D5C487402AACCD6A0089DE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873F2AACCD6A0089DE07 /* ContentView.swift */; };
 		D5C487422AACCD6B0089DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C487412AACCD6B0089DE07 /* Assets.xcassets */; };
@@ -94,6 +96,8 @@
 		D57E3C582AB133E300110787 /* shimmerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shimmerConfig.swift; sourceTree = "<group>"; };
 		D57E3C772AB139BE00110787 /* chartPreLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartPreLoader.swift; sourceTree = "<group>"; };
 		D57E3C792AB139DA00110787 /* chartAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartAnimation.swift; sourceTree = "<group>"; };
+		D57E3C7B2AB1424100110787 /* mainViewPreLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewPreLoader.swift; sourceTree = "<group>"; };
+		D57E3C7F2AB145A000110787 /* chainsSheetDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chainsSheetDisplay.swift; sourceTree = "<group>"; };
 		D5C4873A2AACCD6A0089DE07 /* DefiLlama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiLlama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiLlamaApp.swift; sourceTree = "<group>"; };
 		D5C4873F2AACCD6A0089DE07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				D57E3C582AB133E300110787 /* shimmerConfig.swift */,
 				D57E3C772AB139BE00110787 /* chartPreLoader.swift */,
 				D57E3C792AB139DA00110787 /* chartAnimation.swift */,
+				D57E3C7B2AB1424100110787 /* mainViewPreLoader.swift */,
 			);
 			path = preloader;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 				D5ECC3A82AAD10AF00D4216B /* protocolSheetDisplay.swift */,
 				D57E3C452AAE5E7100110787 /* stablecoinSheetDisplay.swift */,
 				D57E3C4D2AAEADC500110787 /* yieldSheetDisplay.swift */,
+				D57E3C7F2AB145A000110787 /* chainsSheetDisplay.swift */,
 			);
 			path = displays;
 			sourceTree = "<group>";
@@ -442,6 +448,7 @@
 				D57E3C7A2AB139DA00110787 /* chartAnimation.swift in Sources */,
 				D57E3C502AAEAE5200110787 /* yieldDataModel.swift in Sources */,
 				D56AF3FE2AAD38380087EE26 /* protocolPreviewContainer.swift in Sources */,
+				D57E3C7C2AB1424100110787 /* mainViewPreLoader.swift in Sources */,
 				D57E3C2B2AAE11B500110787 /* MainSheetHeader.swift in Sources */,
 				D57E3C482AAE62F100110787 /* stablecoinSheetViewModel.swift in Sources */,
 				D57E3C382AAE3E9C00110787 /* mainViewDataManager.swift in Sources */,
@@ -460,6 +467,7 @@
 				D5C4875D2AACD9300089DE07 /* Colors.swift in Sources */,
 				D57E3C4A2AAEA3F200110787 /* globalDataByChain.swift in Sources */,
 				D56AF3FC2AAD38110087EE26 /* searchBar.swift in Sources */,
+				D57E3C802AB145A000110787 /* chainsSheetDisplay.swift in Sources */,
 				D57E3C352AAE3D3700110787 /* protocolChartContainerHeader.swift in Sources */,
 				D57E3C3A2AAE40AE00110787 /* stablecoinDataModel.swift in Sources */,
 				D57E3C4E2AAEADC500110787 /* yieldSheetDisplay.swift in Sources */,

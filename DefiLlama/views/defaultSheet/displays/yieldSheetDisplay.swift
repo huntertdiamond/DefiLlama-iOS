@@ -10,18 +10,18 @@ import SwiftUI
 struct YieldSheetDisplay: View {
     @State var yieldItems: [ProtocolYieldItem] = []
     @State var isLoading: Bool = true
+    @Binding var selectedDetent: PresentationDetent
+    
     var body: some View {
         ScrollView(showsIndicators: false){
             VStack{
                 if !isLoading {
                     ForEach(yieldItems, id: \.pool) { yieldItem in
-                        
                         YieldPreviewContainer(passedYield: yieldItem)
-                    }            } else {
-                        SheetPreloader()
-                        
                     }
-                
+                } else {
+                    SheetPreloader()
+                }
             }
         }
         .task{
@@ -39,6 +39,6 @@ struct YieldSheetDisplay: View {
 
 struct Yield_Preview: PreviewProvider {
     static var previews: some View {
-        YieldSheetDisplay()
+        YieldSheetDisplay(selectedDetent: .constant(.fraction(0.25)))
     }
 }

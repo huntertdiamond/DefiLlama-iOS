@@ -75,7 +75,7 @@ struct ProtocolPreviewContainer: View {
         }
         .frame(minWidth: 0, maxWidth: .infinity) // Takes up as much space as available.
         .padding(12)
-        .background(Color.l1)
+        .background(Color.sheetL1)
         .cornerRadius(8)
         .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.borderLight, lineWidth: 1))
         .onTapGesture {

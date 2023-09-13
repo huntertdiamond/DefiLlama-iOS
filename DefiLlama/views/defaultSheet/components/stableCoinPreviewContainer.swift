@@ -36,7 +36,7 @@ struct StableCoinPreviewContainer: View {
             
         }
         .padding(12)
-        .background(Color.l1)
+        .background(Color.sheetL1)
         .cornerRadius(8)
     }
 }

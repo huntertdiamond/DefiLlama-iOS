@@ -19,7 +19,7 @@ struct MainViewIndex: View {
                     MainViewHeader(displayedTVL: lastTVL ?? 0)
                     TVLChart(tvlData: tvlData)
                 } else {
-                    Text("Loading data...")
+                    MainViewPreLoader()
                 }
 
                 Spacer()

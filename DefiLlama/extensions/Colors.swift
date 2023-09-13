@@ -15,7 +15,9 @@ extension Color {
     static let l2 = Color("L2")
     static let l3 = Color("L3")
     static let l4 = Color("L4")
-    
+    // dark mode sheet layers USE FOR SHEETS ONLY
+    static let sheetL1 = Color("sheetL1")
+    static let sheetL2 = Color("sheetL2")
     // border colors
     static let borderLight = Color("borderLight")
     
