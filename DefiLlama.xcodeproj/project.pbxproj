@@ -37,6 +37,10 @@
 		D57E3C502AAEAE5200110787 /* yieldDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C4F2AAEAE5200110787 /* yieldDataModel.swift */; };
 		D57E3C522AAEB2B000110787 /* YieldPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C512AAEB2B000110787 /* YieldPreviewContainer.swift */; };
 		D57E3C542AAEB2FF00110787 /* yieldDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C532AAEB2FF00110787 /* yieldDataManager.swift */; };
+		D57E3C562AB133C100110787 /* sheetPreloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C552AB133C100110787 /* sheetPreloader.swift */; };
+		D57E3C592AB133E300110787 /* shimmerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C582AB133E300110787 /* shimmerConfig.swift */; };
+		D57E3C782AB139BE00110787 /* chartPreLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C772AB139BE00110787 /* chartPreLoader.swift */; };
+		D57E3C7A2AB139DA00110787 /* chartAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3C792AB139DA00110787 /* chartAnimation.swift */; };
 		D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */; };
 		D5C487402AACCD6A0089DE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C4873F2AACCD6A0089DE07 /* ContentView.swift */; };
 		D5C487422AACCD6B0089DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C487412AACCD6B0089DE07 /* Assets.xcassets */; };
@@ -86,6 +90,10 @@
 		D57E3C4F2AAEAE5200110787 /* yieldDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yieldDataModel.swift; sourceTree = "<group>"; };
 		D57E3C512AAEB2B000110787 /* YieldPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YieldPreviewContainer.swift; sourceTree = "<group>"; };
 		D57E3C532AAEB2FF00110787 /* yieldDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yieldDataManager.swift; sourceTree = "<group>"; };
+		D57E3C552AB133C100110787 /* sheetPreloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sheetPreloader.swift; sourceTree = "<group>"; };
+		D57E3C582AB133E300110787 /* shimmerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shimmerConfig.swift; sourceTree = "<group>"; };
+		D57E3C772AB139BE00110787 /* chartPreLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartPreLoader.swift; sourceTree = "<group>"; };
+		D57E3C792AB139DA00110787 /* chartAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartAnimation.swift; sourceTree = "<group>"; };
 		D5C4873A2AACCD6A0089DE07 /* DefiLlama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefiLlama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C4873D2AACCD6A0089DE07 /* DefiLlamaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefiLlamaApp.swift; sourceTree = "<group>"; };
 		D5C4873F2AACCD6A0089DE07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -178,6 +186,17 @@
 			children = (
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		D57E3C572AB133CF00110787 /* preloader */ = {
+			isa = PBXGroup;
+			children = (
+				D57E3C552AB133C100110787 /* sheetPreloader.swift */,
+				D57E3C582AB133E300110787 /* shimmerConfig.swift */,
+				D57E3C772AB139BE00110787 /* chartPreLoader.swift */,
+				D57E3C792AB139DA00110787 /* chartAnimation.swift */,
+			);
+			path = preloader;
 			sourceTree = "<group>";
 		};
 		D5C487312AACCD6A0089DE07 = {
@@ -318,6 +337,7 @@
 		D5C487652AACE1100089DE07 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				D57E3C572AB133CF00110787 /* preloader */,
 				D5C487662AACE12E0089DE07 /* spacerStack.swift */,
 				D56AF3FB2AAD38110087EE26 /* searchBar.swift */,
 				D56AF4042AAD49A70087EE26 /* imageView.swift */,
@@ -418,6 +438,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57E3C562AB133C100110787 /* sheetPreloader.swift in Sources */,
+				D57E3C7A2AB139DA00110787 /* chartAnimation.swift in Sources */,
 				D57E3C502AAEAE5200110787 /* yieldDataModel.swift in Sources */,
 				D56AF3FE2AAD38380087EE26 /* protocolPreviewContainer.swift in Sources */,
 				D57E3C2B2AAE11B500110787 /* MainSheetHeader.swift in Sources */,
@@ -443,6 +465,7 @@
 				D57E3C4E2AAEADC500110787 /* yieldSheetDisplay.swift in Sources */,
 				D5C4873E2AACCD6A0089DE07 /* DefiLlamaApp.swift in Sources */,
 				D56AF40C2AAD55700087EE26 /* protocolSheetIndex.swift in Sources */,
+				D57E3C592AB133E300110787 /* shimmerConfig.swift in Sources */,
 				D5ECC3A32AAD042100D4216B /* tvlChartViewModel.swift in Sources */,
 				D57E3C292AAE113E00110787 /* SheetDisplaySelector.swift in Sources */,
 				D5ECC3A92AAD10AF00D4216B /* protocolSheetDisplay.swift in Sources */,
@@ -451,6 +474,7 @@
 				D5C487592AACD5610089DE07 /* allChains.swift in Sources */,
 				D5ECC3A12AAD035500D4216B /* tvlChart.swift in Sources */,
 				D56AF4032AAD42460087EE26 /* mainProtocolList.swift in Sources */,
+				D57E3C782AB139BE00110787 /* chartPreLoader.swift in Sources */,
 				D57E3C252AAD63C100110787 /* tvlDataModel.swift in Sources */,
 				D5C487552AACD1660089DE07 /* mainViewIndex.swift in Sources */,
 				D57E3C522AAEB2B000110787 /* YieldPreviewContainer.swift in Sources */,

@@ -11,15 +11,18 @@ struct YieldSheetDisplay: View {
     @State var yieldItems: [ProtocolYieldItem] = []
     @State var isLoading: Bool = true
     var body: some View {
-        VStack{
-            if !isLoading {
-                ForEach(yieldItems, id: \.pool) { yieldItem in
-                    
-                    YieldPreviewContainer(passedYield: yieldItem)
-                }            } else {
-             Text("loading")
+        ScrollView(showsIndicators: false){
+            VStack{
+                if !isLoading {
+                    ForEach(yieldItems, id: \.pool) { yieldItem in
+                        
+                        YieldPreviewContainer(passedYield: yieldItem)
+                    }            } else {
+                        SheetPreloader()
+                        
+                    }
+                
             }
-            
         }
         .task{
             do{

@@ -29,7 +29,7 @@ struct YieldPreviewContainer: View {
             .frame(width: 150)
             
             Spacer()
-            StablecoinPreviewItem(valueDisplayed: "\(FormatNumbers.shared.abbreviateInt(for: passedYield.tvlUsd ?? 0))", caption: "TVL")
+            StablecoinPreviewItem(valueDisplayed: "$\(FormatNumbers.shared.abbreviateInt(for: passedYield.tvlUsd ?? 0))", caption: "TVL")
             Spacer()
             StablecoinPreviewItem(valueDisplayed: "\(FormatNumbers.shared.addPercentageSign(for: passedYield.apyBase ?? 0))", caption: "Base APY")
             Spacer()
