@@ -1,2 +1,2 @@
 # DefiLlama-iOS
-An iOS  native experience for DefiLlama. If interested in contributing submit a PR. 
+An unfinished mobile client for defillama written in swift
